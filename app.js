@@ -9,6 +9,3 @@ app.listen(PORT, () =>{
     console.log(`Server running in htpp://localhost:8000`);
 });
 
-app.get('/', (req,res) => {
-    res.send("H");
-})
