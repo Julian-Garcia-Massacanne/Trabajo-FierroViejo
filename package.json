@@ -19,6 +19,8 @@
   "homepage": "https://github.com/Julian-Garcia-Massacanne/Trabajo-FierroViejo#readme",
   "dependencies": {
     "express": "^4.19.2",
-    "express-sessions": "^1.0.6"
+    "express-sessions": "^1.0.6",
+    "nodemon": "^3.1.0",
+    "sqlite3": "^5.1.7"
   }
 }
