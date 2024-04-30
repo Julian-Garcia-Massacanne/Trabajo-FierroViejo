@@ -1,6 +1,6 @@
 
-
-function iniciarSesion(){
+/*
+function login(){
     console.log("Hola Iniciar Sesion")
     let form = document.getElementById('login');
     console.log(form.getElementById('dni').value);
@@ -15,4 +15,18 @@ function iniciarSesion(){
             .then((res)=>{
                 window.location.href="http://localhost:8000/register.html"
             }))
+} */
+
+function register(){
+    let form = document.getElementById('register');
+    form.addEventListener('submit', (ev) =>{
+        ev.preventDefault();
+        fetch('/register', {
+            method: "post"
+        })
+        .then((res)=>{
+            res.send("Holanda")
+            //window.location.href="http://localhost:8000/index.html"
+        })
+    })
 }
