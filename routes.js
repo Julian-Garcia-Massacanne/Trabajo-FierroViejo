@@ -1,16 +1,17 @@
 import express from 'express';
 import {register} from './backend.js';
 
+
+
 var routerServer = express.Router();
 
+routerServer.get('/manuel', (req, res) => {
+    res.send('Holaaa');
+});
+
 routerServer.post('/register', function(req, res){
-    let user = register(req.body.Name, req.body.Surname, req.body.DNI, req.body.Mail, req.body.Date, req.body.Password, 1);
-    if(user.error){     
-        res.status(400).json(user);
-    } else {
-        //res.json(user); ahora va sql
-        res.send(user);
-    }
+    let user = register(req.body.name, req.body.surname, req.body.dni, req.body.mail, req.body.date, req.body.password, 1);
+    res.send('alta exitosa');
 });
 
 routerServer.get('/prueba', (req, res) =>{

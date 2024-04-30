@@ -1,0 +1,50 @@
+.container {
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    color: #61b0b2;
+    font-size: 50px; 
+    margin-top: 0; 
+}
+
+h2 {
+    color: #61b0b2;
+}
+
+label {
+    color: #abb444;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="password"],
+button {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: #79b18d;
+    color: #e8e8e7;
+    font-size: 18px; 
+    width : calc(100% - 20px);
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    background-color: #92b268;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #abb444;
+}
